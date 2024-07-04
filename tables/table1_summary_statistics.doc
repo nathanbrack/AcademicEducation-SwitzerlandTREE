@@ -1,0 +1,14 @@
+
+<table style="text-align:center"><tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Max</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">outsider</td><td>1,978</td><td>3.633</td><td>0.645</td><td>1</td><td>4</td></tr>
+<tr><td style="text-align:left">belong</td><td>1,965</td><td>2.906</td><td>0.900</td><td>1</td><td>4</td></tr>
+<tr><td style="text-align:left">awkward</td><td>1,971</td><td>3.387</td><td>0.762</td><td>1</td><td>4</td></tr>
+<tr><td style="text-align:left">t2clis1</td><td>1,649</td><td>3.021</td><td>0.763</td><td>1</td><td>4</td></tr>
+<tr><td style="text-align:left">t2clis2</td><td>1,652</td><td>2.948</td><td>0.740</td><td>1.000</td><td>4.000</td></tr>
+<tr><td style="text-align:left">t2clis3</td><td>1,644</td><td>3.382</td><td>0.773</td><td>1</td><td>4</td></tr>
+<tr><td style="text-align:left">hisei</td><td>1,831</td><td>56.427</td><td>15.852</td><td>16</td><td>90</td></tr>
+<tr><td style="text-align:left">bthr</td><td>1,536</td><td>63.213</td><td>16.411</td><td>16</td><td>90</td></tr>
+<tr><td style="text-align:left">age_y</td><td>1,986</td><td>15.469</td><td>0.614</td><td>13.750</td><td>19.000</td></tr>
+<tr><td style="text-align:left">wleread</td><td>1,989</td><td>561.087</td><td>71.389</td><td>268.790</td><td>884.490</td></tr>
+<tr><td style="text-align:left">parinvol</td><td>1,971</td><td>2.441</td><td>1.182</td><td>1.000</td><td>5.000</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr></table>

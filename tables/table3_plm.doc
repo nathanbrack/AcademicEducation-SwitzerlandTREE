@@ -1,0 +1,623 @@
+<table style="border-collapse:collapse; border:none;">
+<caption style="font-weight: bold; text-align:left;">model 0 without psychological resources</caption>
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">Row</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">std.error</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">p.value</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Intercept</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.649</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental socioeconomic status (SES)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.089</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Male</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.059</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.021</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.004</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Age</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.050</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">First-generation immigrant</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.080</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.034</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.021</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Reading skills</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.157</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental involvement</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.005</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.642</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Goodness-of-fit: AIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">2369.779</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">9.067</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">NA</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">Goodness-of-fit: BIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">2414.542</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">9.067</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">NA</td>
+</tr>
+</table>
+<p>&nbsp;</p><table style="border-collapse:collapse; border:none;">
+<caption style="font-weight: bold; text-align:left;">model 1 with only main effects</caption>
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">Row</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">std.error</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">p.value</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Intercept</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.664</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental socioeconomic status (SES)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.070</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Future expectations (FEX)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.157</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Sense of belonging in lower-s. s. (SOB)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.031</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.002</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Male</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.086</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.020</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Age</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.045</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">First-generation immigrant</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.046</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.153</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Reading skills</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.129</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental involvement</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.003</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.783</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Goodness-of-fit: AIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">2095.080</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">22.143</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">NA</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">Goodness-of-fit: BIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">2151.034</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">22.143</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">NA</td>
+</tr>
+</table>
+<p>&nbsp;</p><table style="border-collapse:collapse; border:none;">
+<caption style="font-weight: bold; text-align:left;">model 2 with the significant two-way interaction</caption>
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">Row</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">std.error</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">p.value</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Intercept</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.667</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental socioeconomic status (SES)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.072</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Future expectations (FEX)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.155</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Sense of belonging in lower-s. s. (SOB)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.031</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.002</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Male</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.087</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.020</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Age</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.044</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">First-generation immigrant</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.046</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.152</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Reading skills</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.129</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental involvement</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.002</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.839</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*FEX</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.025</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.018</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Goodness-of-fit: AIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">2089.135</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">23.064</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">NA</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">Goodness-of-fit: BIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">2150.684</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">23.064</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">NA</td>
+</tr>
+</table>
+<p>&nbsp;</p><table style="border-collapse:collapse; border:none;">
+<caption style="font-weight: bold; text-align:left;">model 3 with all two-way interactions</caption>
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">Row</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">std.error</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">p.value</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Intercept</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.668</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental socioeconomic status (SES)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.071</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Future expectations (FEX)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.155</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Sense of belonging in lower-s. s. (SOB)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.031</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.002</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Male</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.086</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.020</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Age</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.044</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">First-generation immigrant</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.047</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.150</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Reading skills</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.130</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental involvement</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.002</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.861</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*FEX</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.023</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.027</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.015</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.145</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">FEX*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.004</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.726</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Goodness-of-fit: AIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">2089.785</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">22.960</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">NA</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">Goodness-of-fit: BIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">2162.525</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">22.960</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">NA</td>
+</tr>
+</table>
+<p>&nbsp;</p><table style="border-collapse:collapse; border:none;">
+<caption style="font-weight: bold; text-align:left;">model 4 with three-way interactions</caption>
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">Row</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">std.error</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">p.value</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Intercept</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.668</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental socioeconomic status (SES)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.072</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Future expectations (FEX)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.155</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Sense of belonging in lower-s. s. (SOB)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.002</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Male</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.087</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.020</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Age</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.044</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">First-generation immigrant</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.046</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.153</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Reading skills</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.130</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental involvement</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.002</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.853</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*FEX</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.024</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.023</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.014</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.160</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">FEX*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.004</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.698</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*FEX*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.007</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.470</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Goodness-of-fit: AIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">2090.917</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">22.946</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">NA</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">Goodness-of-fit: BIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">2169.253</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">22.946</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">NA</td>
+</tr>
+</table>
+<p>&nbsp;</p><table style="border-collapse:collapse; border:none;">
+<caption style="font-weight: bold; text-align:left;">all five models combined (plz adjust to see the whole table: wide format/smaller fonts)</caption>
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">Row</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate_m0</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">std.error_m0</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate_m1</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">std.error_m1</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">estimate_m2</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; col7">std.error_m2</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; col8">estimate_m3</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; col9">std.error_m3</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; 0">estimate_m4</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; 1">std.error_m4</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Intercept</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">   0.649***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.664***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.667***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">   0.668***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.013</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">   0.668***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.013</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental socioeconomic status (SES)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">   0.089***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.070***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.072***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">   0.071***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">   0.072***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.010</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Future expectations (FEX)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.157***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.155***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">   0.155***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">   0.155***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.011</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Sense of belonging in lower-s. s. (SOB)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.031**</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.031**</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">   0.031**</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">   0.032**</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.010</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Male</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">  -0.059**</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">0.021</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">  -0.086***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.020</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">  -0.087***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.020</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">  -0.086***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.020</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">  -0.087***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.020</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Age</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">  -0.050***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">  -0.045***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">  -0.044***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">  -0.044***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">  -0.044***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.010</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">First-generation immigrant</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">   0.080*</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">0.034</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.046</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.046</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">   0.047</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.032</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">   0.046</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.032</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Reading skills</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">   0.157***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.129***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">   0.129***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">   0.130***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">   0.130***</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.010</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Parental involvement</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">  -0.005</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">  -0.003</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">  -0.002</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">  -0.002</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">  -0.002</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.010</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*FEX</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">  -0.025*</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">  -0.023*</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.011</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">  -0.024*</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.011</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">  -0.015</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">  -0.014</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.010</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">FEX*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">  -0.004</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">0.010</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">  -0.004</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.011</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">SES*FEX*SOB</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">NA</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">  -0.007</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">0.010</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">Goodness-of-fit: AIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">2369.779</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; modelcolumn0 ">9.067</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">2095.080</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">22.143</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">2089.135</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">23.064</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col8">2089.785</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col9">22.960</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  0">2090.917</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  1">22.946</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">Goodness-of-fit: BIC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; modelcolumn0 ">2414.542</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; modelcolumn0 ">9.067</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  ">2151.034</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  ">22.143</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  ">2150.684</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  col7">23.064</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  col8">2162.525</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  col9">22.960</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  0">2169.253</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double;  1">22.946</td>
+</tr>
+</table>
+

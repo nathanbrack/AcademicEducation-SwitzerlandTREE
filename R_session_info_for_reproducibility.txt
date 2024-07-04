@@ -1,0 +1,33 @@
+R version 4.3.1 (2023-06-16 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19045)
+
+Matrix products: default
+
+
+locale:
+[1] LC_COLLATE=German_Switzerland.utf8  LC_CTYPE=German_Switzerland.utf8    LC_MONETARY=German_Switzerland.utf8 LC_NUMERIC=C                       
+[5] LC_TIME=German_Switzerland.utf8    
+
+time zone: Europe/Zurich
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] ggeffects_1.3.4 arm_1.14-4      lme4_1.1-35.1   Matrix_1.5-4.1  MASS_7.3-60     mice_3.16.0     ggplot2_3.4.3   dplyr_1.1.3     sjPlot_2.8.15  
+[10] stargazer_5.2.3 foreign_0.8-84 
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.4       shape_1.4.6        xfun_0.40          bayestestR_0.13.1  insight_0.19.7     lattice_0.21-8     vctrs_0.6.3       
+ [8] sjstats_0.18.2     tools_4.3.1        generics_0.1.3     datawizard_0.9.1   sandwich_3.1-0     tibble_3.2.1       fansi_1.0.4       
+[15] pan_1.9            jomo_2.7-6         pkgconfig_2.0.3    lifecycle_1.0.3    stringr_1.5.0      compiler_4.3.1     farver_2.1.1      
+[22] sjmisc_2.8.9       munsell_0.5.0      codetools_0.2-19   glmnet_4.1-8       pillar_1.9.0       nloptr_2.0.3       tidyr_1.3.0       
+[29] iterators_1.0.14   abind_1.4-5        rpart_4.1.19       mitml_0.4-5        boot_1.3-28.1      multcomp_1.4-25    foreach_1.5.2     
+[36] nlme_3.1-162       tidyselect_1.2.0   sjlabelled_1.2.0   stringi_1.7.12     performance_0.10.8 mvtnorm_1.2-4      purrr_1.0.2       
+[43] forcats_1.0.0      labeling_0.4.3     splines_4.3.1      grid_4.3.1         colorspace_2.1-0   cli_3.6.1          magrittr_2.0.3    
+[50] survival_3.5-5     utf8_1.2.3         broom_1.0.5        TH.data_1.1-2      withr_2.5.0        scales_1.2.1       backports_1.4.1   
+[57] estimability_1.4.1 modelr_0.1.11      emmeans_1.9.0      nnet_7.3-19        hms_1.1.3          zoo_1.8-12         coda_0.19-4.1     
+[64] haven_2.5.3        knitr_1.43         rlang_1.1.1        Rcpp_1.0.12        xtable_1.8-4       glue_1.6.2         pkgload_1.3.4     
+[71] rstudioapi_0.15.0  minqa_1.2.6        R6_2.5.1          
