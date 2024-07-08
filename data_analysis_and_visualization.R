@@ -5,7 +5,7 @@
 # 1. Load and prepare data
 # 2. Descriptive statistics and visualizations
 #   2.1 Summary statistics and the correlation matrix
-#   2.2 Violin and density plots
+#   2.2 Density plots
 # 3. Dealing with missing values (MICE-imputations)
 # 4. Fit the models: LPM and GLM
 #   4.1 First transition to academic education
@@ -53,19 +53,17 @@ correlation_data$University_t4_9 = as.numeric(correlation_data$University_t4_9)-
 tab_corr(correlation_data, corr.method = "pearson", na.deletion = "pairwise", file = "tables/table2_correlation_matrix.doc")
 
 
-## 2.2 Violin and density plots ----
+## 2.2 Density plots ----
 
 library(dplyr)
 library(ggplot2)
-source("functions/violin_and_density_plots.R")
+source("functions/density_plots.R")
 
 plot_data1 <- data %>% 
   rename(`upper-secondary level` = t2acadedu, `socio-economic status (SES)` = hisei, `future expectations` = bthr)
 
-violin_plot("figures/violin_and_density/violin1_socioeconomic_status.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`socio-economic status (SES)`)), x = "upper-secondary level", y = "socio-economic status (SES)")
-density_plot("figures/violin_and_density/density1_socioeconomic_status.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "upper-secondary level", bw = 5)
-violin_plot("figures/violin_and_density/violin1_future_expectations.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`future expectations`)), x = "upper-secondary level", y = "future expectations")
-density_plot("figures/violin_and_density/density1_future_expectations.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`future expectations`)), x = "future expectations", color = "upper-secondary level", bw = 5)
+density_plot("figures/density_plots/density1_socioeconomic_status.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "upper-secondary level", bw = 5)
+density_plot("figures/density_plots/density1_future_expectations.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`future expectations`)), x = "future expectations", color = "upper-secondary level", bw = 5)
 
 
 plot_data2 <- data %>% 
@@ -73,10 +71,8 @@ plot_data2 <- data %>%
   mutate(`university attendance` = recode_factor(University_t4_9, `never enrolled at Univ./ETH` = "never enrolled",
                                                  `enrolled at least once at Univ./ETH between t4 and t9` = "enrolled at least once"))
 
-violin_plot("figures/violin_and_density/violin2_socioeconomic_status.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`socio-economic status (SES)`)), x = "university attendance", y = "socio-economic status (SES)")
-density_plot("figures/violin_and_density/density2_socioeconomic_status.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "university attendance", bw = 5)
-violin_plot("figures/violin_and_density/violin2_future_expectations.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`future expectations`)), x = "university attendance", y = "future expectations")
-density_plot("figures/violin_and_density/density2_future_expectations.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`future expectations`)), x = "future expectations", color = "university attendance", bw = 5)
+density_plot("figures/density_plots/density2_socioeconomic_status.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "university attendance", bw = 5)
+density_plot("figures/density_plots/density2_future_expectations.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`future expectations`)), x = "future expectations", color = "university attendance", bw = 5)
 
 
 
@@ -119,11 +115,11 @@ formula14 = as.numeric(t2acadedu)-1 ~ scale(hisei) * scale(bthr) * I(scale((outs
   sex01 + scale(age_y) + immig + scale(wleread) + scale(parinvol) # model 4 with three-way interactions
 
 # linear probability models
-plm10 = lm.mids(formula10, data = mice_data) # summary(pool(plm10))
-plm11 = lm.mids(formula11, data = mice_data) # summary(pool(plm11))
-plm12 = lm.mids(formula12, data = mice_data) # summary(pool(plm12))
-plm13 = lm.mids(formula13, data = mice_data) # summary(pool(plm13))
-plm14 = lm.mids(formula14, data = mice_data) # summary(pool(plm14))
+lpm10 = lm.mids(formula10, data = mice_data) # summary(pool(lpm10))
+lpm11 = lm.mids(formula11, data = mice_data) # summary(pool(lpm11))
+lpm12 = lm.mids(formula12, data = mice_data) # summary(pool(lpm12))
+lpm13 = lm.mids(formula13, data = mice_data) # summary(pool(lpm13))
+lpm14 = lm.mids(formula14, data = mice_data) # summary(pool(lpm14))
 
 # logistic regression models
 glm10 = glm.mids(formula10, data = mice_data, family=binomial(link = "logit")) # summary(pool(glm10))
@@ -143,7 +139,7 @@ proper_names1 = c("(Intercept)"="Intercept","scale(hisei)"="Parental socioeconom
                   "scale(parinvol)"="Parental involvement","scale(hisei):scale(bthr)"="SES*FEX",
                   "scale(hisei):I(scale((outsider + belong + awkward)/3))"="SES*SOB","scale(bthr):I(scale((outsider + belong + awkward)/3))"="FEX*SOB",
                   "scale(hisei):scale(bthr):I(scale((outsider + belong + awkward)/3))"="SES*FEX*SOB")
-coefficients_table(filename = "tables/table3_plm.doc", model = "plm1", proper_names = proper_names1)
+coefficients_table(filename = "tables/table3_lpm.doc", model = "lpm1", proper_names = proper_names1)
 coefficients_table(filename = "tables/table3_glm.doc", model = "glm1", proper_names = proper_names1)
 
 
@@ -151,14 +147,14 @@ coefficients_table(filename = "tables/table3_glm.doc", model = "glm1", proper_na
 
 source("functions/format_anova_results.R") # helper functions
 
-plm1hisei_bthr = lm.mids(as.numeric(t2acadedu)-1 ~ I(scale(hisei) + scale(bthr)) + I(scale((outsider+belong+awkward)/3)) +
+lpm1hisei_bthr = lm.mids(as.numeric(t2acadedu)-1 ~ I(scale(hisei) + scale(bthr)) + I(scale((outsider+belong+awkward)/3)) +
                            sex01 + scale(age_y) + immig + scale(wleread) + scale(parinvol), data = mice_data)
-anova1hisei_bthr = anova(plm1hisei_bthr, plm11)
+anova1hisei_bthr = anova(lpm1hisei_bthr, lpm11)
 paste("To academic education, difference between SES and FEX:", format_anova_results(anova1hisei_bthr))
 
-plm1hisei_sob = lm.mids(as.numeric(t2acadedu)-1 ~ scale(bthr) + I(scale(hisei) + scale((outsider+belong+awkward)/3)) +
+lpm1hisei_sob = lm.mids(as.numeric(t2acadedu)-1 ~ scale(bthr) + I(scale(hisei) + scale((outsider+belong+awkward)/3)) +
                           sex01 + scale(age_y) + immig + scale(wleread) + scale(parinvol), data = mice_data)
-anova1hisei_sob = anova(plm1hisei_sob, plm11)
+anova1hisei_sob = anova(lpm1hisei_sob, lpm11)
 paste("To academic education, difference between SES and SOB:", format_anova_results(anova1hisei_sob))
 
 
@@ -179,11 +175,11 @@ formula24 =as.numeric(University_t4_9)-1 ~ t2acadedu + scale(hisei) * scale(bthr
   sex01 + scale(age_y) + immig + scale(wleread) + scale(parinvol) # model 4 with three-way interactions
 
 # linear probability models
-plm20 = lm.mids(formula20, data = mice_data) # summary(pool(plm20))
-plm21 = lm.mids(formula21, data = mice_data) # summary(pool(plm21))
-plm22 = lm.mids(formula22, data = mice_data) # summary(pool(plm22))
-plm23 = lm.mids(formula23, data = mice_data) # summary(pool(plm23))
-plm24 = lm.mids(formula24, data = mice_data) # summary(pool(plm24))
+lpm20 = lm.mids(formula20, data = mice_data) # summary(pool(lpm20))
+lpm21 = lm.mids(formula21, data = mice_data) # summary(pool(lpm21))
+lpm22 = lm.mids(formula22, data = mice_data) # summary(pool(lpm22))
+lpm23 = lm.mids(formula23, data = mice_data) # summary(pool(lpm23))
+lpm24 = lm.mids(formula24, data = mice_data) # summary(pool(lpm24))
 
 # logistic regression models
 glm20 = glm.mids(formula20, data = mice_data, family=binomial(link = "logit")) # summary(pool(glm20))
@@ -201,20 +197,20 @@ proper_names2 = c("(Intercept)"="Intercept","t2acadeduacademic education"="Acade
                   "scale(wleread)"="Reading skills","scale(parinvol)"="Parental involvement","scale(hisei):scale(bthr)"="SES*FEX",
                   "scale(hisei):I(scale((t2clis1 + t2clis2 + t2clis3)/3))"="SES*SOB","scale(bthr):I(scale((t2clis1 + t2clis2 + t2clis3)/3))"="FEX*SOB",
                   "scale(hisei):scale(bthr):I(scale((t2clis1 + t2clis2 + t2clis3)/3))"="SES*FEX*SOB")
-coefficients_table(filename = "tables/table4_plm.doc", model = "plm2", proper_names = proper_names2)
+coefficients_table(filename = "tables/table4_lpm.doc", model = "lpm2", proper_names = proper_names2)
 coefficients_table(filename = "tables/table4_glm.doc", model = "glm2", proper_names = proper_names2)
 
 
 # anova model comparisons (tests whether coefficients are significantly different)
 
-plm2bthr_sob = lm.mids(as.numeric(University_t4_9)-1 ~ t2acadedu + scale(hisei) + I(scale(bthr) + scale((t2clis1+t2clis2+t2clis3)/3)) +
+lpm2bthr_sob = lm.mids(as.numeric(University_t4_9)-1 ~ t2acadedu + scale(hisei) + I(scale(bthr) + scale((t2clis1+t2clis2+t2clis3)/3)) +
                          sex01 + scale(age_y) + immig + scale(wleread) + scale(parinvol), data = mice_data)
-anova2bthr_sob = anova(plm2bthr_sob, plm21)
+anova2bthr_sob = anova(lpm2bthr_sob, lpm21)
 paste("To university, difference between SOB and FEX:", format_anova_results(anova2bthr_sob))
 
-plm2interaction = lm.mids(as.numeric(University_t4_9)-1 ~ t2acadedu + scale(hisei) + scale(bthr) * I(scale((t2clis1+t2clis2+t2clis3)/3)) +
+lpm2interaction = lm.mids(as.numeric(University_t4_9)-1 ~ t2acadedu + scale(hisei) + scale(bthr) * I(scale((t2clis1+t2clis2+t2clis3)/3)) +
                             sex01 + scale(age_y) + immig + scale(wleread) + scale(parinvol), data = mice_data)
-anova2interaction = anova(plm21, plm2interaction)
+anova2interaction = anova(lpm21, lpm2interaction)
 paste("To university, interaction between SOB and FEX:", format_anova_results(anova2interaction))
 
 
@@ -242,8 +238,8 @@ bthr_term = paste0("bthr [", paste(bthr_levels, collapse = ", "), "]")
 source("functions/prediction_pooling_mice.R")
 
 # predict and plots the probabilities for model 2 with the significant two-way interaction
-pooled_pred_plm12 = pooled_predictions(imp_list, terms = c(hisei_term, bthr_term), formula = formula12, model = "plm")
-plot_predictions(filename = "figures/figure1_plm_model2_twoway.tif", pooled_pred_plm12, line_legend = "Future\nexpectations",
+pooled_pred_lpm12 = pooled_predictions(imp_list, terms = c(hisei_term, bthr_term), formula = formula12, model = "lpm")
+plot_predictions(filename = "figures/figure1_lpm_model2_twoway.tif", pooled_pred_lpm12, line_legend = "Future\nexpectations",
                  xlabel = "Socioeconomic status of parents", ylabel = "Predicted probability of transitioning to academic education")
 
 pooled_pred_glm12 = pooled_predictions(imp_list, terms = c(hisei_term, bthr_term), formula = formula12, model = "glm")
@@ -257,8 +253,8 @@ acadedu_term = "t2acadedu [academic education]"
 SOBt2_term = paste0("SOB_t2 [", paste(SOB_levels, collapse = ", "), "]")
 
 # predict and plots the probabilities for model 2 with the significant two-way interaction
-pooled_pred_plm22 = pooled_predictions(imp_list, terms = c(SOBt2_term, bthr_term, acadedu_term), formula = formula22, model = "plm")
-plot_predictions(filename = "figures/figure2_plm_model2_twoway.tif", pooled_pred_plm22, line_legend = "Future\nexpectations",
+pooled_pred_lpm22 = pooled_predictions(imp_list, terms = c(SOBt2_term, bthr_term, acadedu_term), formula = formula22, model = "lpm")
+plot_predictions(filename = "figures/figure2_lpm_model2_twoway.tif", pooled_pred_lpm22, line_legend = "Future\nexpectations",
                  xlabel = "                      Sense of belonging in upper-secondary school", ylabel = "Predicted probability of transitioning to university")
 
 pooled_pred_glm22 = pooled_predictions(imp_list, terms = c(SOBt2_term, bthr_term, acadedu_term), formula = formula22, model = "glm")

@@ -17,7 +17,7 @@
 # Get "PISA-TREE_2000_Version_2016.sav" dataset 
 
 GET
-  FILE='C:\Users\local_path_1\Documents\TREE\TREE data release 2017\PISA-TREE_2000_Version_2016.sav'.
+  FILE='C:\Users\local_path_1\PISA-TREE_2000_Version_2016.sav'.
 
 
 
@@ -38,8 +38,7 @@ GET
 # ...using the following code which exemplifies how to merge two datasets; repeat until all datasets are merged
 
 DATASET NAME DataSet1.
-GET FILE='C:\Users\local_path_1\Documents\TREE\TREE data release '+
-    '2017\816_TREE_Data_C1_wave-1-2001_version_2016_DE_v1.sav'.
+GET FILE='C:\Users\local_path_2\816_TREE_Data_C1_wave-1-2001_version_2016_DE_v1.sav'.
 DATASET NAME DataSet2.
 DATASET ACTIVATE DataSet1.
 SORT CASES BY id school student.
@@ -250,7 +249,7 @@ DATASET ACTIVATE  DataSet1.
 # Subsetting variables/creating a working file 
 
 DATASET ACTIVATE DataSet1.
-SAVE OUTFILE='C:\Users\local_path_2\Mes documents\TREE\TREE full merged dataset (release 2017)\PISATREE_2.sav'
+SAVE OUTFILE='C:\Users\local_path_3\PISATREE_2.sav'
     /KEEP id hisei bthr immig sex01 age_y typ_r t2vocedu t2acadedu t2otheredu hightrack intermediatetrack lowtrack 
     notracking wleread parinvol t2clis1 t2clis2 t2clis3
 /COMPRESSED.

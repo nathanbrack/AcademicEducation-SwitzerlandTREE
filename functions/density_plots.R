@@ -1,13 +1,3 @@
-violin_plot <- function(filename, data, x, y){
-  tiff(filename, res = 300, compression = "lzw", height = 7, width = 7, units = "in")
-  p <- ggplot(data, aes(x=!!sym(x), y=!!sym(y))) + 
-    geom_violin() +
-    theme_light()
-  print(p)
-  dev.off()
-}
-
-
 density_plot <- function(filename, data, x, color, bw){
   tiff(filename, res = 300, compression = "lzw", height = 7, width = 7, units = "in")
   p <- ggplot(data, aes(x=!!sym(x), color=!!sym(color))) + 

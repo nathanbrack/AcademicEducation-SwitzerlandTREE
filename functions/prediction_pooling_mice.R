@@ -8,12 +8,12 @@ pooled_predictions <- function(imp_list, terms, formula, model){
     formula_SOBt2 = gsub("I(scale((t2clis1 + t2clis2 + t2clis3)/3))", "SOB_t2", formula_SOBt0, fixed = TRUE)
     formula_updated = as.formula(formula_SOBt2)
     
-    if(model == "plm"){
+    if(model == "lpm"){
       fit = lm(formula_updated, data = x)
     }else if(model == "glm"){
       fit = glm(formula_updated, data = x, family=binomial(link = "logit")) 
     }else{
-      stop("Model not plm or glm!")
+      stop("Model not lpm or glm!")
     }
     
     return(ggpredict(fit, terms = terms))
