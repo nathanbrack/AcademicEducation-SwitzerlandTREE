@@ -62,8 +62,8 @@ source("functions/density_plots.R")
 plot_data1 <- data %>% 
   rename(`upper-secondary level` = t2acadedu, `socio-economic status (SES)` = hisei, `future expectations` = bthr)
 
-density_plot("figures/density_plots/density1_socioeconomic_status.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "upper-secondary level", bw = 5)
-density_plot("figures/density_plots/density1_future_expectations.tif", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`future expectations`)), x = "future expectations", color = "upper-secondary level", bw = 5)
+density_plot("figures/density_plots/density1_socioeconomic_status.tiff", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "upper-secondary level", bw = 5)
+density_plot("figures/density_plots/density1_future_expectations.tiff", data = plot_data1 %>% filter(!is.na(`upper-secondary level`) & !is.na(`future expectations`)), x = "future expectations", color = "upper-secondary level", bw = 5)
 
 
 plot_data2 <- data %>% 
@@ -71,8 +71,8 @@ plot_data2 <- data %>%
   mutate(`university attendance` = recode_factor(University_t4_9, `never enrolled at Univ./ETH` = "never enrolled",
                                                  `enrolled at least once at Univ./ETH between t4 and t9` = "enrolled at least once"))
 
-density_plot("figures/density_plots/density2_socioeconomic_status.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "university attendance", bw = 5)
-density_plot("figures/density_plots/density2_future_expectations.tif", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`future expectations`)), x = "future expectations", color = "university attendance", bw = 5)
+density_plot("figures/density_plots/density2_socioeconomic_status.tiff", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`socio-economic status (SES)`)), x = "socio-economic status (SES)", color = "university attendance", bw = 5)
+density_plot("figures/density_plots/density2_future_expectations.tiff", data = plot_data2 %>% filter(!is.na(`university attendance`) & !is.na(`future expectations`)), x = "future expectations", color = "university attendance", bw = 5)
 
 
 
@@ -239,11 +239,11 @@ source("functions/prediction_pooling_mice.R")
 
 # predict and plots the probabilities for model 2 with the significant two-way interaction
 pooled_pred_lpm12 = pooled_predictions(imp_list, terms = c(hisei_term, bthr_term), formula = formula12, model = "lpm")
-plot_predictions(filename = "figures/figure1_lpm_model2_twoway.tif", pooled_pred_lpm12, line_legend = "Future\nexpectations",
+plot_predictions(filename = "figures/figure1_lpm_model2_twoway.tiff", pooled_pred_lpm12, line_legend = "Future\nexpectations",
                  xlabel = "Socioeconomic status of parents", ylabel = "Predicted probability of transitioning to academic education")
 
 pooled_pred_glm12 = pooled_predictions(imp_list, terms = c(hisei_term, bthr_term), formula = formula12, model = "glm")
-plot_predictions(filename = "figures/figure1_glm_model2_twoway.tif", pooled_pred_glm12, line_legend = "Future\nexpectations",
+plot_predictions(filename = "figures/figure1_glm_model2_twoway.tiff", pooled_pred_glm12, line_legend = "Future\nexpectations",
                  xlabel = "Socioeconomic status of parents", ylabel = "Predicted probability of transitioning to academic education")
 
 
@@ -254,11 +254,11 @@ SOBt2_term = paste0("SOB_t2 [", paste(SOB_levels, collapse = ", "), "]")
 
 # predict and plots the probabilities for model 2 with the significant two-way interaction
 pooled_pred_lpm22 = pooled_predictions(imp_list, terms = c(SOBt2_term, bthr_term, acadedu_term), formula = formula22, model = "lpm")
-plot_predictions(filename = "figures/figure2_lpm_model2_twoway.tif", pooled_pred_lpm22, line_legend = "Future\nexpectations",
+plot_predictions(filename = "figures/figure2_lpm_model2_twoway.tiff", pooled_pred_lpm22, line_legend = "Future\nexpectations",
                  xlabel = "                      Sense of belonging in upper-secondary school", ylabel = "Predicted probability of transitioning to university")
 
 pooled_pred_glm22 = pooled_predictions(imp_list, terms = c(SOBt2_term, bthr_term, acadedu_term), formula = formula22, model = "glm")
-plot_predictions(filename = "figures/figure2_glm_model2_twoway.tif", pooled_pred_glm22, line_legend = "Future\nexpectations",
+plot_predictions(filename = "figures/figure2_glm_model2_twoway.tiff", pooled_pred_glm22, line_legend = "Future\nexpectations",
                  xlabel = "                      Sense of belonging in upper-secondary school", ylabel = "Predicted probability of transitioning to university")
 
 

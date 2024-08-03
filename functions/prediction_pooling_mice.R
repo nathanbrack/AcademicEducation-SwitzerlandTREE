@@ -24,7 +24,7 @@ pooled_predictions <- function(imp_list, terms, formula, model){
 }
 
 plot_predictions <- function(filename, pooled_pred, line_legend, xlabel, ylabel){
-  tiff(filename, res = 300, compression = "lzw", height = 7, width = 4, units = "in")
+  tiff(filename, res = 350, compression = "lzw", height = 7, width = 4, units = "in")
   p <- ggplot(pooled_pred, aes(x, predicted)) + geom_line(aes(linetype = group)) + ylim(0, 1) + theme_bw() +
     xlab(xlabel) + ylab(ylabel) +
     labs(title = "") + theme(legend.position = "right") +
