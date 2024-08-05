@@ -1,7 +1,7 @@
-# Reasearch project on academic education (Switzerland TREE)
+# Origins, Belonging, and Expectations: Assessing Resource Compensation and Reinforcement in Academic Educational Trajectories
 
 ## Description
-In this research project, we analyze how students' socioeconomic backgrounds and psychological resources (a sense of belonging in school and future expectations) relate to the probability to transition from lower- to academic upper-secondary education and from academic upper-secondary to the tertiary education (university). Our research relies on data from TREE (Transition from Education to Employment), a large-scale  longitudinal study on educational and employment trajectories in Switzerland.
+Replication materials for the article «Origins, Belonging, and Expectations: Assessing Resource Compensation and Reinforcement in Academic Educational Trajectories» (in press at *Social Forces*).
 
 ## Authors
-Anonymized for peer review.
+Prof. Dr. Kaspar Burger and Nathan Brack.
